@@ -50,6 +50,7 @@ public class UsingSwingWorker extends JFrame {
         }
         // обработка промежуточных результатов
         // это поток рассылки событий!
+        @Override
         protected void process(List<String> chunks) {
             button.setText(chunks.get(0));
         }
